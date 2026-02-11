@@ -1,0 +1,1 @@
+Enter your API key after registering in openweatermapAPI and put it in db_connection.php file so project can work properly and i have used port 90 because i have changed it in Xampp so also chnage it to avoid any error
