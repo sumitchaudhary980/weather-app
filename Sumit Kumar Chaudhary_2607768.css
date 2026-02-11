@@ -1,0 +1,181 @@
+/* over all element css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body css */
+body {
+  background: linear-gradient(to right, #e0e0e0, #cfcfcf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* main container css */
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* header css */
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* seacrhbar css */
+.search-box {
+  flex: 1;
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+}
+
+/* search button css */
+.search-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+  cursor: pointer;
+
+}
+
+/* /to get searchicon css */
+.search-btn::before {
+  content: "\f002";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #666;
+  font-size: 14px;
+}
+
+/* input search css */
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* card css */
+.card {
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  padding: 30px;
+
+}
+
+/* middle part css */
+.middle-section {
+  display: flex;
+  gap: 25px;
+}
+
+/* city and countryndisplay css */
+.city-card {
+  flex: 1;
+  text-align: center;
+}
+
+/* place css */
+.place {
+  display: inline-flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+
+.city-card .place h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+/* time css */
+.city-card .time {
+  font-size: 60px;
+  color: #222;
+  margin: 10px 0;
+}
+
+/* date css */
+.city-card .date {
+  color: #666;
+}
+
+/* weather deatils css */
+.weather-stats-card {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* temperature css */
+.stats-left .temp {
+  font-size: 55px;
+  color: #444;
+}
+
+/* feels like css */
+.stats-left .feels-like {
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* sunrise sunset css */
+.sun-cycle .cycle-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* center card css */
+.stats-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* right card css */
+.stats-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+/* humdity, wind, pressure, visibility css  */
+.grid-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* icon css */
+.grid-stat i {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* footer css */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}

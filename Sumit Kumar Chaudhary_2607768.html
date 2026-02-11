@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="Sumit Kumar Chaudhary_2607768.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- main container starts -->
+    <div class="container">
+      <!-- header section starts -->
+      <div class="header">
+        <div class="search-box">
+          <button class="search-btn" id="searchBtn"></button>
+          <input
+            type="text"
+            placeholder="Search for your preferred city..."
+            class="search-bar"
+            id="searchBar"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <!-- header section ends -->
+
+      <!-- weather details section starts  -->
+      <div class="middle-section">
+        <div class="card city-card">
+          <!-- city country time date section -->
+          <div class="place">
+            <h2 id="city">Selma</h2>
+            <h2 id="country">US</h2>
+          </div>
+          <h1 class="time" id="time">09:03</h1>
+          <p class="date" id="date">Wednesday, 10 Dec</p>
+        </div>
+
+        <!-- weather details section starts -->
+        <div class="card weather-stats-card">
+          <!-- left section to display temperature, feels like, sunrise and sunset  -->
+          <div class="stats-left">
+            <h1 class="temp" id="temperature">24°C</h1>
+            <p class="feels-like" id="feelsLike">Feels like: 22°C</p>
+
+            <div class="sun-cycle">
+              <div class="cycle-item">
+                <i class="fas fa-arrow-up"></i>
+                <div>
+                  <span class="label">Sunrise</span>
+                  <span class="value" id="sunrise">06:37 AM</span>
+                </div>
+              </div>
+
+              <div class="cycle-item">
+                <i class="fas fa-arrow-down"></i>
+                <div>
+                  <span class="label">Sunset</span>
+                  <span class="value" id="sunset">20:37 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- center card section to display temperature, weather icon, weather condition and description-->
+          <div class="stats-center">
+            <img
+              id="icon"
+              src="https://openweathermap.org/img/wn/01d@2x.png"
+              alt="weather icon"
+            />
+            <h3 id="weatherCondition">Sunny</h3>
+            <h5 id="descriptionWeather">Brokenclouds</h5>
+          </div>
+
+          <!-- right card section to display humidity, wind speed, wind direction and pressure -->
+          <div class="stats-right">
+            <div class="grid-stat">
+              <i class="fas fa-water"></i>
+              <strong id="humidity">41%</strong>
+              <small>Humidity</small>
+            </div>
+
+            <div class="grid-stat">
+              <i class="fas fa-wind"></i>
+              <strong id="windSpeed">2km/h</strong>
+              <small>Wind Speed</small>
+            </div>
+
+            <div class="grid-stat">
+              <i class="fas fa-location-arrow"></i>
+              <strong id="windDirection">90°</strong>
+              <small>Wind Direction</small>
+            </div>
+
+            <div class="grid-stat">
+              <i class="fas fa-tachometer-alt"></i>
+              <strong id="pressure">997hPa</strong>
+              <small>Pressure</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- weather details section ends  -->
+
+      <!-- footer section starts  -->
+
+      <footer class="footer">© 2607768_Sumit Kumar Chaudhary</footer>
+      <!-- footer section ends -->
+    </div>
+  </body>
+  <script src="Sumit Kumar Chaudhary_2607768.js"></script>
+</html>
